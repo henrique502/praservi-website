@@ -1,20 +1,56 @@
-<head>
-  <meta charset="utf-8">
 
-  {% capture title %}
-    {%- if page.title -%}
-      {{ page.title | strip_html | xml_escape  }} - {{ site.title | strip_html | xml_escape  }}
-    {%- else -%}
-      {{ site.title | strip_html | xml_escape }}
-    {%- endif -%}
-  {% endcapture %}
 
-  <title>{{ title }}</title>
-  <meta name="robots" content="none">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,700|Scope+One:400,500" type="text/css" />
 
-  <link href="/assets/css/main.css" rel="stylesheet" />
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
+
+
+  <link rel='stylesheet' id='beeteam_front_animate_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/animate.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_slick_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/slick/slick.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_loadawsome_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/loaders.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_priority_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/priority-navigation/priority-nav-core.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_hover_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/hover-css/hover.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_pagination_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/pagination/pagination.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='beeteam_front_malihu_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/malihuscroll/jquery.mCustomScrollbar.min.css?ver=2.2.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='vc_extensions_cqbundle_adminicon-css'  href='https://praservi.com.br/wp-content/plugins/vc-extensions-bundle/css/admin_icon.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='layerslider-css'  href='https://praservi.com.br/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.7.5' type='text/css' media='all' />
+  <link rel='stylesheet' id='wp-block-library-css'  href='https://praservi.com.br/wp-includes/css/dist/block-library/style.min.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='ccw_main_css-css'  href='https://praservi.com.br/wp-content/plugins/click-to-chat-for-whatsapp/assets/css/mainstyles.css?ver=1.6' type='text/css' media='all' />
+  <link rel='stylesheet' id='contact-form-7-css'  href='https://praservi.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='dashicons-css'  href='https://praservi.com.br/wp-includes/css/dashicons.min.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='kodex-posts-likes-css'  href='https://praservi.com.br/wp-content/plugins/kodex-posts-likes/public/css/kodex-posts-likes-public.css?ver=2.4.3' type='text/css' media='all' />
+  <link rel='stylesheet' id='rs-plugin-settings-css'  href='https://praservi.com.br/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.4' type='text/css' media='all' />
+  <link rel='stylesheet' id='default_style-css'  href='https://praservi.com.br/wp-content/themes/bridge/style.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='qode_font_awesome-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/font-awesome/css/font-awesome.min.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='qode_font_elegant-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/elegant-icons/style.min.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='qode_linea_icons-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/linea-icons/style.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='qode_dripicons-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/dripicons/dripicons.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='stylesheet-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/stylesheet.min.css?ver=5.2.20' type='text/css' media='all' />
+  <style id='stylesheet-inline-css' type='text/css'>
+    .page-id-361 .content > .content_inner > .container, .page-id-361 .content > .content_inner > .full_width { background-color: #ffffff;}
+    .page-id-361.disabled_footer_top .footer_top_holder, .page-id-361.disabled_footer_bottom .footer_bottom_holder { display: none;}
+  </style>
+  <link rel='stylesheet' id='qode_print-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/print.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='webkit-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/webkit_stylesheet.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='style_dynamic-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/style_dynamic.css?ver=1561648786' type='text/css' media='all' />
+  <link rel='stylesheet' id='responsive-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/responsive.min.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='style_dynamic_responsive-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/style_dynamic_responsive.css?ver=1561648786' type='text/css' media='all' />
+  <link rel='stylesheet' id='js_composer_front-css'  href='https://praservi.com.br/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.7' type='text/css' media='all' />
+  <link rel='stylesheet' id='custom_css-css'  href='https://praservi.com.br/wp-content/themes/bridge/css/custom_css.css?ver=1561648788' type='text/css' media='all' />
+  <link rel='stylesheet' id='bsf-Defaults-css'  href='https://praservi.com.br/wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=5.2.20' type='text/css' media='all' />
+  <link rel='stylesheet' id='ul_bete_front_css-css'  href='https://praservi.com.br/wp-content/plugins/ultimate-layouts-vc/assets/front-end/core.css?ver=2.2.0' type='text/css' media='all' />
+
+
+ <link rel='stylesheet' id='slick-css'  href='https://praservi.com.br/wp-content/plugins/vc-extensions-bundle/carousel/../testimonialcarousel/slick/slick.css?ver=5.2.20' type='text/css' media='all' />
+ <link rel='stylesheet' id='vc-extensions-cqcarousel-style-css'  href='https://praservi.com.br/wp-content/plugins/vc-extensions-bundle/carousel/css/style.css?ver=5.2.20' type='text/css' media='all' />
+ <link rel='stylesheet' id='tooltipster-css'  href='https://praservi.com.br/wp-content/plugins/vc-extensions-bundle/carousel/../profilecard/css/tooltipster.css?ver=5.2.20' type='text/css' media='all' />
+ <link rel='stylesheet' id='prettyphoto-css'  href='https://praservi.com.br/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=5.4.7' type='text/css' media='all' />
+ <link rel='stylesheet' id='fs.boxer-css'  href='https://praservi.com.br/wp-content/plugins/vc-extensions-bundle/carousel/../depthmodal/css/jquery.fs.boxer.css?ver=5.2.20' type='text/css' media='all' />
+
+
+ <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+  <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1564579411935{padding-top: 40px !important;padding-right: 20px !important;padding-left: 20px !important;}.vc_custom_1562088619152{padding-top: 35px !important;padding-bottom: 35px !important;background-color: #ffffff !important;}.vc_custom_1561324728226{padding-top: 60px !important;padding-bottom: 50px !important;background-color: #cce2e2 !important;}.vc_custom_1560477183765{padding-top: 108px !important;padding-bottom: 89px !important;}.vc_custom_1560477248832{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #e43634 !important;}.vc_custom_1523537064983{padding-top: 7px !important;padding-bottom: 63px !important;}.vc_custom_1523537407628{padding-right: 5% !important;padding-left: 5% !important;}.vc_custom_1523537413472{padding-right: 5% !important;padding-left: 5% !important;}.vc_custom_1523537419376{padding-right: 5% !important;padding-left: 5% !important;}.vc_custom_1561325480525{padding-top: 55px !important;padding-bottom: 45px !important;}.vc_custom_1561325209660{padding-top: 30px !important;padding-right: 35px !important;padding-left: 35px !important;}.vc_custom_1562080546605{padding-top: 60px !important;padding-bottom: 35px !important;}.vc_custom_1562080528219{padding-top: 20px !important;padding-bottom: 20px !important;}.vc_custom_1562080512869{padding-top: 20px !important;padding-bottom: 20px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+

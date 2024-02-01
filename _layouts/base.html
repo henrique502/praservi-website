@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html lang="br">
-  {% include head.html %}
-  <body>
-    {{ content }}
+  <head>
+    <meta charset="utf-8">
+
+    {% capture title %}
+    {%- if page.title -%}
+    {{ page.title | strip_html | xml_escape  }} - {{ site.title | strip_html | xml_escape  }}
+    {%- else -%}
+    {{ site.title | strip_html | xml_escape }}
+    {%- endif -%}
+    {% endcapture %}
+    <title>{{ title }}</title>
+
+    {%- if page.robots -%}
+      <meta name="robots" content="all">
+    {%- else -%}
+      <meta name="robots" content="none">
+    {%- endif -%}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    {% include head.html %}
+  </head>
+  <body class="home page-template page-template-full_width page-template-full_width-php page page-id-361  qode-title-hidden qode_grid_1200 qode-theme-ver-16.2.1 qode-theme-bridge disabled_footer_top disabled_footer_bottom qode_advanced_footer_responsive_1000 wpb-js-composer js-comp-ver-5.4.7 vc_responsive">
+  {{ content }}
+
+    {% include foot.html %}
   </body>
 </html>
